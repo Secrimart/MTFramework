@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MTFramework_Example' do
+  pod 'MTFramework', :path => '../'
+
+  target 'MTFramework_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

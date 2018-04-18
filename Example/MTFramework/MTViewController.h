@@ -1,0 +1,13 @@
+//
+//  MTViewController.h
+//  MTFramework
+//
+//  Created by rstx_reg@aliyun.com on 04/18/2018.
+//  Copyright (c) 2018 rstx_reg@aliyun.com. All rights reserved.
+//
+
+@import UIKit;
+
+@interface MTViewController : UIViewController
+
+@end

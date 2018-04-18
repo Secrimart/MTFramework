@@ -8,6 +8,8 @@
 
 #import "MTViewController.h"
 
+@import MTFramework;
+
 @interface MTViewController ()
 
 @end
@@ -18,6 +20,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    MDDLog(@"Detail log.");
+    
+    MDLog(@"Simple log.");
 }
 
 - (void)didReceiveMemoryWarning

@@ -9,8 +9,8 @@
 #define MTFramework_h
 
 #ifdef DEBUG
-#define MDDLog(...) NSLog(@"%s,:%@", __func__, [NSString stringWithFormat: __VA_ARGS__])
-#define MDLog(...) NSLog(@"\n{类名}:%s,\n{行数}:%d\n{NSLog}:%@ \n\n", __func__, __LINE__, [NSString stringWithFormat: __VA_ARGS__])
+#define MDLog(...) NSLog(@"%s,:%@", __func__, [NSString stringWithFormat: __VA_ARGS__])
+#define MDDLog(...) NSLog(@"\n{类名}:%s,\n{行数}:%d\n{NSLog}:%@ \n\n", __func__, __LINE__, [NSString stringWithFormat: __VA_ARGS__])
 #else
 #   define MDDLog(...) /* */
 #endif

@@ -30,37 +30,38 @@ MTFramwork is a set of coding tools and coding style.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MTFramework/Classes/**/*'
+  s.source_files = 'MTFramework/Classes/MTFramework.h'
+  s.public_header_files = 'MTFramework/Classes/MTFramework.h'
   
   s.subspec 'Category' do |ss|
       ss.subspec 'Hook' do |sss|
-          sss.source_files = 'JLFramework/Classes/Category/Hook/*.*'
-          sss.public_header_files = 'JLFramework/Classes/Category/Hook/*.h'
+          sss.source_files = 'MTFramework/Classes/Category/Hook/*.*'
+          sss.public_header_files = 'MTFramework/Classes/Category/Hook/*.h'
           sss.dependency 'JRSwizzle', '~> 1.0.0'
           
       end
       
       ss.subspec 'SafeAccess' do |sss|
-          sss.source_files = 'JLFramework/Classes/Category/SafeAccess/*.*'
-          sss.public_header_files = 'JLFramework/Classes/Category/SafeAccess/*.h'
+          sss.source_files = 'MTFramework/Classes/Category/SafeAccess/*.*'
+          sss.public_header_files = 'MTFramework/Classes/Category/SafeAccess/*.h'
       end
       
       ss.subspec 'Tools' do |sss|
-          sss.source_files = 'JLFramework/Classes/Category/Tools/*.*'
-          sss.public_header_files = 'JLFramework/Classes/Category/Tools/*.h'
+          sss.source_files = 'MTFramework/Classes/Category/Tools/*.*'
+          sss.public_header_files = 'MTFramework/Classes/Category/Tools/*.h'
           sss.dependency 'JRSwizzle', '~> 1.0.0'
       end
   end
   
   s.subspec 'CoreData' do |ss|
-      ss.source_files = 'JLFramework/Classes/CoreData/*.*'
-      ss.public_header_files = 'JLFramework/Classes/CoreData/*.h'
+      ss.source_files = 'MTFramework/Classes/CoreData/*.*'
+      ss.public_header_files = 'MTFramework/Classes/CoreData/*.h'
       ss.dependency 'JRSwizzle', '~> 1.0.0'
       ss.dependency 'MTFramework/Category/Hook', '~> 0.1'
   end
   
   s.subspec 'JSONKit' do |ss|
-      ss.source_files = 'JLFramework/Classes/JSONKit/*.*'
-      ss.public_header_files = 'JLFramework/Classes/JSONKit/*.h'
+      ss.source_files = 'MTFramework/Classes/JSONKit/*.*'
+      ss.public_header_files = 'MTFramework/Classes/JSONKit/*.h'
   end
 end

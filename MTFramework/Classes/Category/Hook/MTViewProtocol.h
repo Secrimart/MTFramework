@@ -18,7 +18,7 @@
 
 @end
 
-@interface UIView (MTView)<MTViewProtocol>
+@interface UIView (MTView) <MTViewProtocol>
 
 @end
 

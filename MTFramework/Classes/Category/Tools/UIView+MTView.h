@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (MTView)
+@interface UIView (JLViewFrame)
 @property (nonatomic, assign) UIEdgeInsets contentInsets;
 
 @property (nonatomic, assign) CGFloat view_x;

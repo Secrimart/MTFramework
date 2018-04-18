@@ -13,7 +13,7 @@ static const void *contentInsetsLeft = &contentInsetsLeft;
 static const void *contentInsetsBottom = &contentInsetsBottom;
 static const void *contentInsetsRight = &contentInsetsRight;
 
-@implementation UIView (MTView)
+@implementation UIView (JLViewFrame)
 
 - (UIEdgeInsets)contentInsets {
     CGFloat top = [objc_getAssociatedObject(self, contentInsetsTop) floatValue];

@@ -13,6 +13,7 @@
 #define MDDLog(...) NSLog(@"\n{类名}:%s,\n{行数}:%d\n{NSLog}:%@ \n\n", __func__, __LINE__, [NSString stringWithFormat: __VA_ARGS__])
 #else
 #   define MDDLog(...) /* */
+#   define MDLog(...) /* */
 #endif
 
 #define MDLogFunc MDLog(@"%s",__func__)

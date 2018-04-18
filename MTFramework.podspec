@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MTFramework'
   s.version          = '0.1.0'
-  s.summary          = 'JLFramwork is a set of coding tools and coding style.'
+  s.summary          = 'MTFramwork is a set of coding tools and coding style.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-JLFramwork is a set of coding tools and coding style.
+MTFramwork is a set of coding tools and coding style.
                        DESC
 
   s.homepage         = 'https://github.com/Secrimart/MTFramework'

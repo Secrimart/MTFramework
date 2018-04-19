@@ -148,6 +148,11 @@
 }
 
 + (BOOL)isIPHONEX {
-    return [[UIDevice deviceModelName] isEqualToString:@"iPhone X"];
+    NSString *platform = [UIDevice deviceModelName];
+    if ([platform isEqualToString:@"Simulator"]) {
+        return ([[UIScreen mainScreen] bounds].size.height - 812) ? NO : YES;
+    }
+    
+    return [platform isEqualToString:@"iPhone X"];
 }
 @end

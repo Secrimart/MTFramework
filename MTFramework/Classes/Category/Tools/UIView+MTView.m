@@ -28,6 +28,10 @@ static const void *contentInsetsRight = &contentInsetsRight;
     objc_setAssociatedObject(self, contentInsetsLeft, @(contentInsets.left), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, contentInsetsBottom, @(contentInsets.bottom), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, contentInsetsRight, @(contentInsets.right), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+    if ([self respondsToSelector:@selector(viewDidChangedContentInsets)]) {
+        [self viewDidChangedContentInsets];
+    }
 }
 
 - (CGFloat)view_x {

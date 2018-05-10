@@ -7,7 +7,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (JLViewFrame)
+@protocol MTViewFrameProtocol <NSObject>
+@optional
+- (void)viewDidChangedContentInsets;
+
+@end
+
+@interface UIView (JLViewFrame)<MTViewFrameProtocol>
 @property (nonatomic, assign) UIEdgeInsets contentInsets;
 
 @property (nonatomic, assign) CGFloat view_x;

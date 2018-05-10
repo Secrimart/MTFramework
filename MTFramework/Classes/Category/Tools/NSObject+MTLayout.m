@@ -31,7 +31,7 @@ static const void *constCornerRadius = &constCornerRadius;
     CGFloat left = [objc_getAssociatedObject(self, edgeInsetsBottom) floatValue];
     CGFloat bottom = [objc_getAssociatedObject(self, edgeInsetsBottom) floatValue];
     CGFloat right = [objc_getAssociatedObject(self, edgeInsetsRight) floatValue];
-    return UIEdgeInsetsMake(top > 0.f ? top : 8.f, left > 0.f ? left : 15.f, bottom > 0.f ? bottom : 8.f, right > 0.f ? right : 8.f);
+    return UIEdgeInsetsMake(top > 0.f ? top : 8.f, left > 0.f ? left : 15.f, bottom > 0.f ? bottom : 8.f, right > 0.f ? right : 15.f);
 }
 
 - (void)setEdgeInsets:(UIEdgeInsets)edgeInsets {

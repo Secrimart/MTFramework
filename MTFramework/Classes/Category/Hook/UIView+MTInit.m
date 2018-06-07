@@ -16,12 +16,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSError *error;
-        BOOL result = [[self class] jr_swizzleMethod:@selector(init) withMethod:@selector(jl_init) error:&error];
-        if (!result || error) {
-            NSLog(@"Can't swizzle methods - %@", [error description]);
-        }
-        
-        result = [[self class] jr_swizzleMethod:@selector(initWithCoder:) withMethod:@selector(jl_initWithCoder:) error:&error];
+        BOOL result = [[self class] jr_swizzleMethod:@selector(initWithCoder:) withMethod:@selector(jl_initWithCoder:) error:&error];
         if (!result || error) {
             NSLog(@"Can't swizzle methods - %@", [error description]);
         }
@@ -36,16 +31,6 @@
             NSLog(@"Can't swizzle methods - %@", [error description]);
         }
     });
-}
-
-- (instancetype)jl_init {
-    id obj = [self jl_init];
-    if (obj) {
-        if ([obj respondsToSelector:@selector(initView)]) {
-            [obj initView];
-        }
-    }
-    return obj;
 }
 
 - (instancetype)jl_initWithCoder:(NSCoder *)aDecoder {

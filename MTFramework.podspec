@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTFramework'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'MTFramwork is a set of coding tools and coding style.'
 
 # This description is used to generate tags and improve search results.

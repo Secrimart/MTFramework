@@ -12,6 +12,9 @@
 - (void)initView;
 - (void)initCell; // Olny for UITableViewCell
 
+/**
+ 在 -layoutSubviews 中调用的方法，实现类可以在其中实现控件的约束布局（多次调用）。
+ */
 - (void)setupLayoutConstraint;
 
 - (CGFloat)heightView;

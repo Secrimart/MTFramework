@@ -9,6 +9,11 @@
 
 @protocol MTViewFrameProtocol <NSObject>
 @optional
+
+/**
+ 在 -setContentInsets: 中调用的方法，实现类在设置内边距后可以进行控件的约束布局
+ （可以通过调用-setContentInsets:来控制约束布局的调用次数）。
+ */
 - (void)viewDidChangedContentInsets;
 
 @end
